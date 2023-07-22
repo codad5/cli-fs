@@ -2,6 +2,13 @@
 
 cli-fs is a simple CLI app for common file operations written in Rust. It uses the [**fli**](https://github.com/codad5/fli) crate, which provides a simple and intuitive way to define command-line interfaces for your Rust applications.
 
+## About cli-fs
+
+cli-fs was developed as a showcase of some of the use cases of the `fli` crate, which provides an easy-to-use framework for building command-line interfaces in Rust. It demonstrates how to perform common file operations such as listing the contents of a directory, moving files, creating files, speaking words, and writing to files.
+
+## Please Note
+
+This project is primarily intended as a demonstration and learning tool for using the `fli` crate. While it provides basic functionality for file operations, it may not be suitable for production use without further enhancements and testing.
 ## Usage
 
 To use cli-fs, follow the steps below:
@@ -76,19 +83,24 @@ cli-fs provides the following commands:
 
 - Write a word to a file (append mode):
   ```bash
-  ./cli-fs write filename.txt -a "Hello, world!"
+  ./cli-fs write filename.txt "Hello, world!" -a
   ```
 
 - Write a word to a file (overwrite mode, force has no effect):
   ```bash
-  ./cli-fs write filename.txt -f "Hello, world!"
+  ./cli-fs write filename.txt "Hello, world!" -f
   ```
-
-## Credits
-
-cli-fs is built by [codad5](https://github.com/codad5) and uses the [fli](https://github.com/codad5/fli) crate for command-line interface functionality.
 
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Acknowledgments
+
+- The `fli` crate used in this project is developed and maintained by [Chibueze Aniezeofor](https://github.com/codad5).
+- Special thanks to [Chibueze Aniezeofor](https://github.com/codad5) for creating cli-fs and showcasing the capabilities of the `fli` crate.
+
+Feel free to explore the code, experiment with the app, and use it as a reference for building your own CLI applications using the `fli` crate. If you encounter any issues or have suggestions for improvements, please don't hesitate to open an issue or pull request on the [GitHub repository](https://github.com/codad5/cli-fs).
+
+Happy coding!
 ```
